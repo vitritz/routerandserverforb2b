@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Roteadores</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .form-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        .form-container h2 {
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        .form-group input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Inserir Dados do Roteador</h2>
+
+    <form action="vini2.php" method="post">
+        <div class="form-group">
+            <label for="roteador_ap_antena">Roteador/AP/Antena:</label>
+            <input type="text" name="roteador_ap_antena" required>
+        </div>
+
+        <div class="form-group">
+            <label for="ip">IP do Roteador:</label>
+            <input type="text" name="ip" required>
+        </div>
+
+        <div class="form-group">
+            <label for="mascara">Máscara:</label>
+            <input type="text" name="mascara" required>
+        </div>
+
+        <div class="form-group">
+            <label for="porta">Porta:</label>
+            <input type="text" name="porta" required>
+        </div>
+
+        <div class="form-group">
+            <label for="porta_https">Porta HTTPS:</label>
+            <input type="text" name="porta_https" required>
+        </div>
+
+        <div class="form-group">
+            <label for="admin_http">Admin HTTP:</label>
+            <input type="text" name="admin_http" required>
+        </div>
+
+        <div class="form-group">
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" required>
+        </div>
+
+        <div class="form-group">
+            <label for="admin_ssh">Admin SSH:</label>
+            <input type="text" name="admin_ssh" required>
+        </div>
+
+        <div class="form-group">
+            <label for="senha_ssh">Senha SSH:</label>
+            <input type="password" name="senha_ssh" required>
+        </div>
+
+        <div class="form-group">
+            <label for="ip_wan">IP WAN:</label>
+            <input type="text" name="ip_wan" required>
+        </div>
+
+        <div class="form-group">
+            <label for="mascara_wan">Máscara WAN:</label>
+            <input type="text" name="mascara_wan" required>
+        </div>
+
+        <div class="form-group">
+            <label for="gateway">Gateway:</label>
+            <input type="text" name="gateway" required>
+        </div>
+
+        <div class="form-group">
+            <label for="dns_1">DNS 1:</label>
+            <input type="text" name="dns_1" required>
+        </div>
+
+        <div class="form-group">
+            <label for="dns_2">DNS 2:</label>
+            <input type="text" name="dns_2" required>
+        </div>
+
+        <div class="form-group">
+            <label for="ddns">DDNS:</label>
+            <input type="text" name="ddns" required>
+        </div>
+
+        <div class="form-group">
+            <label for="ssid">SSID:</label>
+            <input type="text" name="ssid" required>
+        </div>
+
+        <div class="form-group">
+            <label for="canal">Canal:</label>
+            <input type="text" name="canal" required>
+        </div>
+
+        <div class="form-group">
+            <label for="tipo_seguranca">Tipo de Segurança:</label>
+            <input type="text" name="tipo_seguranca" required>
+        </div>
+
+        <div class="form-group">
+            <label for="encriptacao">Encriptação:</label>
+            <input type="text" name="encriptacao" required>
+        </div>
+
+        <div class="form-group">
+            <label for="chave">Chave:</label>
+            <input type="password" name="chave" required>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Inserir">
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
